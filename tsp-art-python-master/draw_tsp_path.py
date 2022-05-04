@@ -9,8 +9,8 @@ from PIL import Image, ImageDraw
 import os
 
 # Change these file names to the relevant files.
-ORIGINAL_IMAGE = "images/VUT-256-stipple.png"
-IMAGE_TSP = "images/VUT-256-stipple.tsp"
+ORIGINAL_IMAGE = "images/VUT-1024-stipple.png"
+IMAGE_TSP = "images/VUT-1024-stipple.tsp"
 
 def create_data_model(image_tsp):
     """Stores the data for the problem."""
@@ -129,7 +129,7 @@ def main():
     
     # Print solution on console.
     if solution:
-        #print_solution(manager, routing, solution)
+        print_solution(manager, routing, solution)
         print("Step 5/5: Drawing the solution")
         routes = get_routes(solution, routing, manager)
         draw_routes(data['locations'],routes)

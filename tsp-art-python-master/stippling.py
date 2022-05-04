@@ -5,7 +5,7 @@ import sys
 cmd = sys.executable
 
 # The filename of the image you want to stipple goes here.
-ORIGINAL_IMAGE = "images/VUT.jpg"
+ORIGINAL_IMAGE = "images/darkVUT.png"
 
 # Enables saving of images.
 SAVE_IMAGE = True
