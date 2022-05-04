@@ -9,8 +9,8 @@ from PIL import Image, ImageDraw
 import os
 
 # Change these file names to the relevant files.
-ORIGINAL_IMAGE = "images/VUT-1024-stipple.png"
-IMAGE_TSP = "images/VUT-1024-stipple.tsp"
+ORIGINAL_IMAGE = "images/darkVUTinverted-256-stipple.png"
+IMAGE_TSP = "images/darkVUTinverted-256-stipple.tsp"
 
 def create_data_model(image_tsp):
     """Stores the data for the problem."""
@@ -81,6 +81,7 @@ def draw_routes(nodes, path, FINAL_IMAGE=IMAGE_TSP.replace("-stipple.tsp","-tsp.
 
     original_image = Image.open(ORIGINAL_IMAGE)
     width, height = original_image.size
+    print(width,height)
 
     tsp_image = Image.new("RGBA",(width,height),color='white')
     tsp_image_draw = ImageDraw.Draw(tsp_image)
