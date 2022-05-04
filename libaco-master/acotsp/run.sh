@@ -1,0 +1,9 @@
+./bin/acotsp --simple \
+            -f benchmarks/VUT-1024-stipple.tsp \
+            -i 10 \
+            -m 10 \
+            -p -1.0 \
+            -q 1.0 \
+            -r 0.1 \
+            -b 1.0 \
+            -a 1.0 \
