@@ -1,7 +1,7 @@
-./bin/acotsp --elitist 0.2 \
+./bin/acotsp --simple \
             -f benchmarks/darkVUTinverted-256-stipple.tsp \
             -i 150 \
-            -m 50 \
+            -m 10 \
             -p 0.01 \
             -q 0.5 \
             -r 0.03 \

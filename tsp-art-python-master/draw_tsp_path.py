@@ -81,7 +81,6 @@ def draw_routes(nodes, path, FINAL_IMAGE=IMAGE_TSP.replace("-stipple.tsp","-tsp.
 
     original_image = Image.open(ORIGINAL_IMAGE)
     width, height = original_image.size
-    print(width,height)
 
     tsp_image = Image.new("RGBA",(width,height),color='white')
     tsp_image_draw = ImageDraw.Draw(tsp_image)
